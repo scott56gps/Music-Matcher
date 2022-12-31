@@ -13,7 +13,7 @@ struct Music_MatcherApp: App {
         WindowGroup {
             ContentView()
                 // We supply our application with a store having an initial state value
-                .environmentObject(MusicMatcherStore(initial: MusicMatcherState()))
+                .environmentObject(MusicMatcherStore(initial: MusicMatcherState(), reducer: musicMatcherReducer))
         }
     }
 }
