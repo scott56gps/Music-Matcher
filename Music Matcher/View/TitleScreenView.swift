@@ -15,8 +15,10 @@ struct TitleScreenView: View {
         VStack {
             Text("Title Screen")
             Button("Start Game") {
-                // We ask the store to update the game state to startGame
-                store.dispatch(.startGame)
+                withAnimation {
+                    // We ask the store to update the game state to startGame
+                    store.dispatch(.startGame)
+                }
             }
         }
     }

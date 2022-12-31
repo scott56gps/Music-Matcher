@@ -15,9 +15,12 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
     
     // Depending on the action, change to a new action.
     // This is the DFA part.  We specify: "Go to this new state"
+    /// This is awesome because in *one place* we determine where each state will lead to.
     switch action {
     case .startGame:
         mutatingState.gameState = .started
+    case .endGame:
+        mutatingState.gameState = .title
     }
     
     // Submit the state with a mutated game state

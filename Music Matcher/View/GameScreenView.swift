@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct GameScreenView: View {
+    @EnvironmentObject var store: MusicMatcherStore
+
     var body: some View {
-        Text("Game Screen")
+        VStack {
+            Text("Game Screen")
+            Button("Back to Title") {
+                withAnimation {
+                    store.dispatch(.endGame)
+                }
+            }
+        }
     }
 }
 
