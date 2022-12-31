@@ -20,6 +20,7 @@
 		D2E16D9C2960307500A5A6D0 /* TitleScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16D9B2960307500A5A6D0 /* TitleScreenView.swift */; };
 		D2E16D9E2960309B00A5A6D0 /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16D9D2960309B00A5A6D0 /* GameScreenView.swift */; };
 		D2E16DA0296030BB00A5A6D0 /* GameWinScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16D9F296030BB00A5A6D0 /* GameWinScreenView.swift */; };
+		D2E16DA22960322800A5A6D0 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16DA12960322800A5A6D0 /* Actions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		D2E16D9B2960307500A5A6D0 /* TitleScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenView.swift; sourceTree = "<group>"; };
 		D2E16D9D2960309B00A5A6D0 /* GameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenView.swift; sourceTree = "<group>"; };
 		D2E16D9F296030BB00A5A6D0 /* GameWinScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinScreenView.swift; sourceTree = "<group>"; };
+		D2E16DA12960322800A5A6D0 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				D2E16D9329602CE900A5A6D0 /* State.swift */,
 				D2E16D9829602E2A00A5A6D0 /* Store.swift */,
+				D2E16DA12960322800A5A6D0 /* Actions.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				D2E16D6B2960269E00A5A6D0 /* ContentView.swift in Sources */,
 				D2E16D9729602D8D00A5A6D0 /* GameState.swift in Sources */,
 				D2E16DA0296030BB00A5A6D0 /* GameWinScreenView.swift in Sources */,
+				D2E16DA22960322800A5A6D0 /* Actions.swift in Sources */,
 				D2E16D692960269E00A5A6D0 /* Music_MatcherApp.swift in Sources */,
 				D2E16D9429602CE900A5A6D0 /* State.swift in Sources */,
 			);

@@ -8,12 +8,13 @@
 import Foundation
 import SwiftUI
 
-typealias MusicMatcherStore = Store<MusicMatcherState>
+typealias MusicMatcherStore = Store<MusicMatcherState, MusicMatcherAction>
 
 /**
  This is the *place* where the state is accessed.
+ In order to access the store, one must specify the current state and an action.
  */
-class Store<State>: ObservableObject {
+class Store<State, Action>: ObservableObject {
     @Published private(set) var state: State
     
     init(initial: State) {
