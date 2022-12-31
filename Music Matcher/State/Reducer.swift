@@ -10,5 +10,16 @@ import Foundation
 typealias Reducer<State, Action> = (State, Action) -> State
 
 let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { state, action in
-    return state
+    // Obtain a copy of the current state, so it may be updated
+    var mutatingState = state
+    
+    // Depending on the action, change to a new action.
+    // This is the DFA part.  We specify: "Go to this new state"
+    switch action {
+    case .startGame:
+        mutatingState.gameState = .started
+    }
+    
+    // Submit the state with a mutated game state
+    return mutatingState
 }

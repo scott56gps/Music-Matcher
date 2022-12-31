@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct TitleScreenView: View {
+    // EnvironmentObject is, what I believe, an updatable pointer back to a source of truth
+    @EnvironmentObject var store: MusicMatcherStore
+    
     var body: some View {
-        Text("Title Screen")
+        VStack {
+            Text("Title Screen")
+            Button("Start Game") {
+                // We ask the store to update the game state to startGame
+                store.dispatch(.startGame)
+            }
+        }
     }
 }
 
