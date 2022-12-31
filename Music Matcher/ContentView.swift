@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var store: MusicMatcherStore
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        switch store.state.gameState {
+        case .title: TitleScreenView()
+        case .started: GameScreenView()
+        case .won: GameWinScreenView()
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(MusicMatcherStore(initial: MusicMatcherState()))
     }
 }
