@@ -10,4 +10,5 @@ import Foundation
 enum MusicMatcherAction {
     case startGame
     case endGame
+    case changeCardCollection(CardCollectionType)
 }

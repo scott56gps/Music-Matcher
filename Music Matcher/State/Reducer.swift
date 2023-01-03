@@ -21,6 +21,11 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
         mutatingState.gameState = .started
     case .endGame:
         mutatingState.gameState = .title
+    case .changeCardCollection(let toType):
+        switch toType {
+        case .music:
+            mutatingState.cards = MusicCardGenerator.generateCards()
+        }
     }
     
     // Submit the state with a mutated game state
