@@ -13,6 +13,5 @@ import Foundation
  */
 struct MusicMatcherState {
     var gameState: GameState = .title
-    var cards: [Card] = MusicCardGenerator.generateCards()
-    
+    var cards: [[Card]] = MusicCardGenerator.generateCards()
 }

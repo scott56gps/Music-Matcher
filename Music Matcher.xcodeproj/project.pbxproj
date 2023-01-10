@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D260F14B296D559B00F64EDA /* CardGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F14A296D559B00F64EDA /* CardGridView.swift */; };
+		D260F154296D80CC00F64EDA /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F153296D80CC00F64EDA /* ArrayExtensions.swift */; };
+		D260F156296D89EB00F64EDA /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F155296D89EB00F64EDA /* IntExtensions.swift */; };
 		D26454452963F94D00C1B85D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26454442963F94D00C1B85D /* Note.swift */; };
 		D26454472963FC8500C1B85D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26454462963FC8500C1B85D /* Card.swift */; };
 		D264544D2964158500C1B85D /* MusicCardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264544C2964158500C1B85D /* MusicCardContent.swift */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		D260F14A296D559B00F64EDA /* CardGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGridView.swift; sourceTree = "<group>"; };
+		D260F153296D80CC00F64EDA /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		D260F155296D89EB00F64EDA /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		D26454442963F94D00C1B85D /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D26454462963FC8500C1B85D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		D264544C2964158500C1B85D /* MusicCardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCardContent.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D260F152296D80C000F64EDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D260F153296D80CC00F64EDA /* ArrayExtensions.swift */,
+				D260F155296D89EB00F64EDA /* IntExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D26454552964260400C1B85D /* Generator */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,7 @@
 		D2E16D672960269E00A5A6D0 /* Music Matcher */ = {
 			isa = PBXGroup;
 			children = (
+				D260F152296D80C000F64EDA /* Extensions */,
 				D26454552964260400C1B85D /* Generator */,
 				D2E16D9A2960305900A5A6D0 /* View */,
 				D2E16D9529602D7E00A5A6D0 /* Model */,
@@ -339,8 +353,10 @@
 			files = (
 				D2E16D9929602E2A00A5A6D0 /* Store.swift in Sources */,
 				D264545B29642F9C00C1B85D /* MusicCardGenerator.swift in Sources */,
+				D260F154296D80CC00F64EDA /* ArrayExtensions.swift in Sources */,
 				D2E16D9C2960307500A5A6D0 /* TitleScreenView.swift in Sources */,
 				D2E16D9E2960309B00A5A6D0 /* GameScreenView.swift in Sources */,
+				D260F156296D89EB00F64EDA /* IntExtensions.swift in Sources */,
 				D2E16D6B2960269E00A5A6D0 /* ContentView.swift in Sources */,
 				D26454472963FC8500C1B85D /* Card.swift in Sources */,
 				D26454542964253B00C1B85D /* CardCollectionType.swift in Sources */,

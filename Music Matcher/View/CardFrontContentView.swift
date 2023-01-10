@@ -7,21 +7,17 @@
 
 import SwiftUI
 
-struct CardFrontContentView: View {
-    var noteName: String
-    
-    init(_ noteName: String) {
-        self.noteName = noteName
-    }
+struct CardFrontContentView<CardContent: View>: View {
+    var content: CardContent
     
     var body: some View {
-        Text(noteName)
-            .font(.title)
+        content
     }
 }
 
 struct CardFrontContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CardFrontContentView("A")
+        CardFrontContentView(content: Text("A")
+            .font(.title))
     }
 }

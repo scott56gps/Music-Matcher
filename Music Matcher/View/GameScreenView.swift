@@ -11,14 +11,7 @@ struct GameScreenView: View {
     @EnvironmentObject var store: MusicMatcherStore
 
     var body: some View {
-        VStack {
-            Text("Game Screen")
-            Button("Back to Title") {
-                withAnimation {
-                    store.dispatch(.endGame)
-                }
-            }
-        }
+        CardGridView(cards: store.state.cards)
     }
 }
 
