@@ -5,9 +5,9 @@
 //  Created by Scott Nicholes on 1/2/23.
 //
 
-import Foundation
+import SwiftUI
 
-enum Note {
+enum Note: String {
     case A
     case B
     case C
@@ -15,4 +15,8 @@ enum Note {
     case E
     case F
     case G
+    
+    var image: Image {
+        Image(rawValue)
+    }
 }
