@@ -17,7 +17,8 @@ struct TitleScreenView: View {
             Button("Start Game") {
                 withAnimation {
                     // We ask the store to update the game state to startGame
-                    store.dispatch(.startGame)
+                    // TODO: Create a way to start games of different types
+                    store.dispatch(.startGame(.music))
                 }
             }
         }
