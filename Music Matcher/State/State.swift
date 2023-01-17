@@ -13,6 +13,7 @@ import Foundation
  */
 struct MusicMatcherState {
     var gameState: GameState = .title
-    var cards: [[Card]] = MusicCardGenerator.generateEmptyCards()
+    var cards: [[Card]] = MusicCardGenerator.generateEmpty2dCards()
+    var selectedCards: [Card] = MusicCardGenerator.generateEmptyCards()
     var moves: Int = 0
 }

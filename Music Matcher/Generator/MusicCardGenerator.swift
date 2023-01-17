@@ -14,7 +14,11 @@ struct MusicCardGenerator {
                 Card(content: MusicCardContent(note: .C)), Card(content: MusicCardContent(note: .D))].shuffled().to2dSquare()!
     }
     
-    static func generateEmptyCards() -> [[Card<MusicCardContent>]] {
+    static func generateEmpty2dCards() -> [[Card<MusicCardContent>]] {
         return [[]]
+    }
+    
+    static func generateEmptyCards() -> [Card<MusicCardContent>] {
+        return []
     }
 }
