@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardGridView<CardContent: View>: View {
+    @EnvironmentObject var store: MusicMatcherStore
     var cards: [[Card<CardContent>]]
     
     var body: some View {
@@ -20,6 +21,9 @@ struct CardGridView<CardContent: View>: View {
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10)
                         .stroke())
+                    .onTapGesture {
+                        store.dispatch(.flipCard(card.id))
+                    }
                 }
             }
             Divider()
