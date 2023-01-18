@@ -28,6 +28,8 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
         }
     case .endGame:
         mutatingState.gameState = .title
+    case .winGame:
+        mutatingState.gameState = .won
     case .changeCardCollection(let toType):
         switch toType {
         case .music:
@@ -64,6 +66,24 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
         mutatingState.selectedCards.append(selectedCard)
         mutatingState.cards = cards
         mutatingState.moves += 1
+        
+    case .unFlipSelectedCards:
+        let selectedCardsIds = mutatingState.selectedCards.map { $0.id }
+        
+        let cards = mutatingState.cards.flatMap { $0 }
+            .map { card in
+                guard selectedCardsIds.contains(card.id) else {
+                    return card
+                }
+                return Card(id: card.id, isFlipped: false, content: card.content)
+            }
+            .to2dSquare() ?? []
+        
+        mutatingState.selectedCards = []
+        mutatingState.cards = cards
+        
+    case .clearSelectedCards:
+        mutatingState.selectedCards = []
     }
     
     // Submit the state with the mutated game state

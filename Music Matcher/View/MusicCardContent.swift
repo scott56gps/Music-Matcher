@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MusicCardContent: View {
+struct MusicCardContent: View, Equatable {
     let note: Note
     
     init(note: Note) {

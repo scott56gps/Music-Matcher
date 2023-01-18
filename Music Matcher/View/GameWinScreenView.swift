@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct GameWinScreenView: View {
+    @EnvironmentObject var store: MusicMatcherStore
+    
     var body: some View {
-        Text("Game Win!")
+        VStack {
+            Text("You Won!")
+            Button("Go Again") {
+                store.dispatch(.endGame)
+            }
+        }
     }
 }
 
