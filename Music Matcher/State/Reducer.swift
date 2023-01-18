@@ -19,6 +19,9 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
     switch action {
     case .startGame(let ofType):
         mutatingState.gameState = .started
+        mutatingState.selectedCards = []
+        mutatingState.moves = 0
+        
         switch ofType {
         case .music:
             mutatingState.cards = MusicCardGenerator.generateCards()
@@ -35,7 +38,7 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
             // We cannot flip more than 2 cards
             break
         }
-        guard mutatingState.selectedCards.contains(where: { $0.id == id }) else {
+        guard !mutatingState.selectedCards.contains(where: { $0.id == id }) else {
             // We cannot flip a card that is already selected
             break
         }
@@ -59,6 +62,7 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
         cards[selectedGroupIndex][selectedInnerIndex] = flippedCard
         
         mutatingState.selectedCards.append(selectedCard)
+        mutatingState.cards = cards
         mutatingState.moves += 1
     }
     

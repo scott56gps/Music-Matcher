@@ -16,12 +16,10 @@ struct CardGridView<CardContent: View>: View {
             ForEach(0..<cards.count, id: \.self) { groupIndex in
              GridRow {
                  ForEach(cards[groupIndex]) { card in
-                     CardFrontContentView(content: card.content)
-                    .frame(width: 100, height: 150)
-                    .cornerRadius(10)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                        .stroke())
+                     CardView(card: card)
+                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .onTapGesture {
+                        print("Card Pressed")
                         store.dispatch(.flipCard(card.id))
                     }
                 }

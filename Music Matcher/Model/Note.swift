@@ -8,13 +8,14 @@
 import SwiftUI
 
 enum Note: String {
-    case A
-    case B
-    case C
-    case D
-    case E
-    case F
-    case G
+    case A4
+    case B4
+    case C4
+    case C5
+    case D4
+    case E4
+    case F4
+    case G4
     
     var image: Image {
         Image(rawValue)
