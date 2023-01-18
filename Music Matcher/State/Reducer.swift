@@ -28,6 +28,8 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
         }
     case .endGame:
         mutatingState.gameState = .title
+    case .winGame:
+        mutatingState.gameState = .won
     case .changeCardCollection(let toType):
         switch toType {
         case .music:

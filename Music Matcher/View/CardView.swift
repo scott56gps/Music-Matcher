@@ -22,6 +22,10 @@ struct CardView<CardContent: View>: View {
                     .padding()
             }
         }
+        .rotation3DEffect(
+            card.isFlipped ?
+            Angle(degrees: 180) :
+            Angle(degrees: 0), axis: (x: 0.0, y: 10.0, z: 0.0))
     }
 }
 

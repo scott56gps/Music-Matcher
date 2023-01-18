@@ -19,7 +19,6 @@ struct CardGridView<CardContent: View>: View {
                      CardView(card: card)
                          .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .onTapGesture {
-                        print("Card Pressed")
                         store.dispatch(.flipCard(card.id))
                     }
                 }
@@ -28,6 +27,7 @@ struct CardGridView<CardContent: View>: View {
                 .gridCellUnsizedAxes(.horizontal)
             }
         }
+        .animation(.default)
     }
 }
 
