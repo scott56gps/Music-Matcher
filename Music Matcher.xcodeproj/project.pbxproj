@@ -34,6 +34,7 @@
 		D2E16DA42960336A00A5A6D0 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16DA32960336A00A5A6D0 /* Reducer.swift */; };
 		D2F61B9C29777EFB0095CB39 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F61B9B29777EFB0095CB39 /* CardView.swift */; };
 		D2F61B9F297794900095CB39 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F61B9E297794900095CB39 /* Middleware.swift */; };
+		D2F61BA1297795400095CB39 /* GameLogicMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F61BA0297795400095CB39 /* GameLogicMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		D2E16DA32960336A00A5A6D0 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		D2F61B9B29777EFB0095CB39 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D2F61B9E297794900095CB39 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		D2F61BA0297795400095CB39 /* GameLogicMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogicMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				D2E16DA12960322800A5A6D0 /* Actions.swift */,
 				D2E16DA32960336A00A5A6D0 /* Reducer.swift */,
 				D2F61B9E297794900095CB39 /* Middleware.swift */,
+				D2F61BA0297795400095CB39 /* GameLogicMiddleware.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				D2F61B9F297794900095CB39 /* Middleware.swift in Sources */,
 				D2E16DA0296030BB00A5A6D0 /* GameWinScreenView.swift in Sources */,
 				D2E16DA22960322800A5A6D0 /* Actions.swift in Sources */,
+				D2F61BA1297795400095CB39 /* GameLogicMiddleware.swift in Sources */,
 				D2E16D692960269E00A5A6D0 /* Music_MatcherApp.swift in Sources */,
 				D2E16DA42960336A00A5A6D0 /* Reducer.swift in Sources */,
 				D2E16D9429602CE900A5A6D0 /* State.swift in Sources */,

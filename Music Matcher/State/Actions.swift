@@ -12,4 +12,6 @@ enum MusicMatcherAction {
     case endGame
     case changeCardCollection(CardCollectionType)
     case flipCard(UUID)
+    case clearSelectedCards
+    case unFlipSelectedCards
 }
