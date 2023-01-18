@@ -11,6 +11,14 @@ import Combine
 let gameLogic: Middleware<MusicMatcherState, MusicMatcherAction> = { state, action in
     switch action {
     case .flipCard:
+        let cards = state.cards.flatMap { $0 }
+        let flippedCards = cards.filter { $0.isFlipped }
+        if flippedCards.count == cards.count {
+            return Just(.winGame)
+                .delay(for: 1, scheduler: DispatchQueue.main)
+                .eraseToAnyPublisher()
+        }
+        
         let selectedCards = state.selectedCards
         
         if selectedCards.count == 2 {

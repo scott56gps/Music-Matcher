@@ -159,7 +159,6 @@
 				D2E16D9529602D7E00A5A6D0 /* Model */,
 				D2E16D9229602A3E00A5A6D0 /* State */,
 				D2E16D682960269E00A5A6D0 /* Music_MatcherApp.swift */,
-				D2E16D6A2960269E00A5A6D0 /* ContentView.swift */,
 				D2E16D6C2960269F00A5A6D0 /* Assets.xcassets */,
 				D2E16D6E2960269F00A5A6D0 /* Preview Content */,
 			);
@@ -218,6 +217,7 @@
 		D2E16D9A2960305900A5A6D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D2E16D6A2960269E00A5A6D0 /* ContentView.swift */,
 				D2E16D9B2960307500A5A6D0 /* TitleScreenView.swift */,
 				D2E16D9D2960309B00A5A6D0 /* GameScreenView.swift */,
 				D2E16D9F296030BB00A5A6D0 /* GameWinScreenView.swift */,
