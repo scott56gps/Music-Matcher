@@ -22,6 +22,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(MusicMatcherStore(initial: MusicMatcherState(), reducer: musicMatcherReducer))
+            .environmentObject(MusicMatcherStore(initial: MusicMatcherState(),
+                                                 reducer: musicMatcherReducer,
+                                                 middlewares: [gameLogic]))
     }
 }

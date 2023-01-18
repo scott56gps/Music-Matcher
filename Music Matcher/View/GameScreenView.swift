@@ -11,12 +11,16 @@ struct GameScreenView: View {
     @EnvironmentObject var store: MusicMatcherStore
 
     var body: some View {
-        CardGridView(cards: store.state.cards)
+        VStack {
+            CardGridView(cards: store.state.cards)
+            Text("Moves: \(store.state.moves)")
+        }
     }
 }
 
 struct GameScreenView_Previews: PreviewProvider {
     static var previews: some View {
         GameScreenView()
+        .environmentObject(MusicMatcherStore(initial: MusicMatcherState(), reducer: musicMatcherReducer))
     }
 }

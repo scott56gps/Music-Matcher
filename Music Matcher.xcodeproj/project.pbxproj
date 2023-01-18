@@ -32,6 +32,9 @@
 		D2E16DA0296030BB00A5A6D0 /* GameWinScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16D9F296030BB00A5A6D0 /* GameWinScreenView.swift */; };
 		D2E16DA22960322800A5A6D0 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16DA12960322800A5A6D0 /* Actions.swift */; };
 		D2E16DA42960336A00A5A6D0 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E16DA32960336A00A5A6D0 /* Reducer.swift */; };
+		D2F61B9C29777EFB0095CB39 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F61B9B29777EFB0095CB39 /* CardView.swift */; };
+		D2F61B9F297794900095CB39 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F61B9E297794900095CB39 /* Middleware.swift */; };
+		D2F61BA1297795400095CB39 /* GameLogicMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F61BA0297795400095CB39 /* GameLogicMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		D2E16D9F296030BB00A5A6D0 /* GameWinScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinScreenView.swift; sourceTree = "<group>"; };
 		D2E16DA12960322800A5A6D0 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		D2E16DA32960336A00A5A6D0 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		D2F61B9B29777EFB0095CB39 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D2F61B9E297794900095CB39 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		D2F61BA0297795400095CB39 /* GameLogicMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogicMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +159,6 @@
 				D2E16D9529602D7E00A5A6D0 /* Model */,
 				D2E16D9229602A3E00A5A6D0 /* State */,
 				D2E16D682960269E00A5A6D0 /* Music_MatcherApp.swift */,
-				D2E16D6A2960269E00A5A6D0 /* ContentView.swift */,
 				D2E16D6C2960269F00A5A6D0 /* Assets.xcassets */,
 				D2E16D6E2960269F00A5A6D0 /* Preview Content */,
 			);
@@ -192,6 +197,8 @@
 				D2E16D9829602E2A00A5A6D0 /* Store.swift */,
 				D2E16DA12960322800A5A6D0 /* Actions.swift */,
 				D2E16DA32960336A00A5A6D0 /* Reducer.swift */,
+				D2F61B9E297794900095CB39 /* Middleware.swift */,
+				D2F61BA0297795400095CB39 /* GameLogicMiddleware.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -203,7 +210,6 @@
 				D26454442963F94D00C1B85D /* Note.swift */,
 				D26454462963FC8500C1B85D /* Card.swift */,
 				D26454532964253B00C1B85D /* CardCollectionType.swift */,
-				D264544C2964158500C1B85D /* MusicCardContent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,12 +217,15 @@
 		D2E16D9A2960305900A5A6D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D2E16D6A2960269E00A5A6D0 /* ContentView.swift */,
 				D2E16D9B2960307500A5A6D0 /* TitleScreenView.swift */,
 				D2E16D9D2960309B00A5A6D0 /* GameScreenView.swift */,
 				D2E16D9F296030BB00A5A6D0 /* GameWinScreenView.swift */,
 				D27EE0A929697A02000E6FE4 /* CardFrontContentView.swift */,
 				D27EE0AB29697A13000E6FE4 /* CardBackContentView.swift */,
 				D260F14A296D559B00F64EDA /* CardGridView.swift */,
+				D2F61B9B29777EFB0095CB39 /* CardView.swift */,
+				D264544C2964158500C1B85D /* MusicCardContent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,13 +367,16 @@
 				D2E16D9E2960309B00A5A6D0 /* GameScreenView.swift in Sources */,
 				D260F156296D89EB00F64EDA /* IntExtensions.swift in Sources */,
 				D2E16D6B2960269E00A5A6D0 /* ContentView.swift in Sources */,
+				D2F61B9C29777EFB0095CB39 /* CardView.swift in Sources */,
 				D26454472963FC8500C1B85D /* Card.swift in Sources */,
 				D26454542964253B00C1B85D /* CardCollectionType.swift in Sources */,
 				D264544D2964158500C1B85D /* MusicCardContent.swift in Sources */,
 				D260F14B296D559B00F64EDA /* CardGridView.swift in Sources */,
 				D2E16D9729602D8D00A5A6D0 /* GameState.swift in Sources */,
+				D2F61B9F297794900095CB39 /* Middleware.swift in Sources */,
 				D2E16DA0296030BB00A5A6D0 /* GameWinScreenView.swift in Sources */,
 				D2E16DA22960322800A5A6D0 /* Actions.swift in Sources */,
+				D2F61BA1297795400095CB39 /* GameLogicMiddleware.swift in Sources */,
 				D2E16D692960269E00A5A6D0 /* Music_MatcherApp.swift in Sources */,
 				D2E16DA42960336A00A5A6D0 /* Reducer.swift in Sources */,
 				D2E16D9429602CE900A5A6D0 /* State.swift in Sources */,
