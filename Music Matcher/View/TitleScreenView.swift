@@ -14,6 +14,7 @@ struct TitleScreenView: View {
     var body: some View {
         VStack {
             Text("Title Screen")
+                .padding()
             Button("Start Game") {
                 withAnimation {
                     // We ask the store to update the game state to startGame

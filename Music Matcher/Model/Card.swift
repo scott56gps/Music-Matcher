@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import AVFoundation
 
-struct Card<CardContent>: Identifiable {
+struct Card<CardContent: AudioViewable>: Identifiable {
     let id: UUID
     let isFlipped: Bool
     let content: CardContent

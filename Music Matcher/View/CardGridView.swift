@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardGridView<CardContent: View>: View {
+struct CardGridView<CardContent: AudioViewable>: View {
     @EnvironmentObject var store: MusicMatcherStore
     var cards: [[Card<CardContent>]]
     
@@ -33,6 +33,6 @@ struct CardGridView<CardContent: View>: View {
 
 struct CardGridView_Previews: PreviewProvider {
     static var previews: some View {
-        CardGridView<MusicCardContent>(cards: MusicCardGenerator.generateCards())
+        CardGridView<NoteCardContent>(cards: MusicCardGenerator.generateCards())
     }
 }

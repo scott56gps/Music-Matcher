@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import AVFoundation
 
-struct MusicCardContent: View, Equatable {
-    let note: Note
+struct NoteCardContent: AudioViewable, Equatable {
+    typealias EnumeratedViewable = Note
+    
+    let sound: Note
     
     init(note: Note) {
-        self.note = note
+        self.sound = note
     }
     
     var body: some View {
-        Image(note.rawValue)
+        Image(sound.rawValue)
             .resizable()
             .aspectRatio(contentMode: .fit)
     }
@@ -23,7 +26,7 @@ struct MusicCardContent: View, Equatable {
 
 struct MusicCardContent_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(card: Card(isFlipped: true, content: MusicCardContent(note: .C4)))
+        CardView(card: Card(isFlipped: true, content: NoteCardContent(note: .C4)))
     }
 }
 
