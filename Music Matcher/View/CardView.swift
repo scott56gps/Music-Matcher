@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView<CardContent: View>: View {
+struct CardView<CardContent: AudioViewable>: View {
     var card: Card<CardContent>
     
     var body: some View {
@@ -31,6 +31,6 @@ struct CardView<CardContent: View>: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(card: Card(isFlipped: true, content: MusicCardContent(note: .C4)))
+        CardView(card: Card(isFlipped: true, content: NoteCardContent(note: .C4)))
     }
 }

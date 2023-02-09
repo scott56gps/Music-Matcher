@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Note: String {
+enum Note: String, CaseIterable {
     case A4
     case B4
     case C4
@@ -16,8 +16,4 @@ enum Note: String {
     case E4
     case F4
     case G4
-    
-    var image: Image {
-        Image(rawValue)
-    }
 }

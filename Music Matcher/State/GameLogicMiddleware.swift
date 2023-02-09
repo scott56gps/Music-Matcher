@@ -26,7 +26,7 @@ let gameLogic: Middleware<MusicMatcherState, MusicMatcherAction> = { state, acti
             Just(.clearSelectedCards)
                 .eraseToAnyPublisher() :
             Just(.unFlipSelectedCards)
-                .delay(for: 1, scheduler: DispatchQueue.main)
+                .delay(for: 0.75, scheduler: DispatchQueue.main)
                 .eraseToAnyPublisher()
         }
         
