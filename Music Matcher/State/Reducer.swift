@@ -60,6 +60,10 @@ let musicMatcherReducer: Reducer<MusicMatcherState, MusicMatcherAction> = { stat
         }
         
         let selectedCard = cards[selectedGroupIndex][selectedInnerIndex]
+        guard !selectedCard.isFlipped else {
+            // We cannot flip an already matched card
+            break
+        }
         let flippedCard = Card(id: selectedCard.id, isFlipped: true, content: selectedCard.content)
         cards[selectedGroupIndex][selectedInnerIndex] = flippedCard
         
