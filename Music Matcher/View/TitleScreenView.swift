@@ -13,15 +13,18 @@ struct TitleScreenView: View {
     
     var body: some View {
         VStack {
-            Text("Title Screen")
+            Text("Music Matcher")
+                .font(.largeTitle)
                 .padding()
-            Button("Start Game") {
+            Spacer()
+            Button("Start!") {
                 withAnimation {
                     // We ask the store to update the game state to startGame
                     // TODO: Create a way to start games of different types
                     store.dispatch(.startGame(.music))
                 }
             }
+            Spacer()
         }
         .containerRelativeFrame([.horizontal, .vertical])
         .background(Gradient(colors: [.teal, .cyan, .green]).opacity(0.6))
