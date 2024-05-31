@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+<<<<<<< HEAD
    uuid = "F0ED871A-5CC9-43CA-8FD6-45E1CF009FBE"
    type = "1"
    version = "2.0">
+=======
+   uuid = "D852F837-F24C-43BA-BA21-E91B724144E5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF777CB8-419A-498B-9961-7BD88C8344AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Music Matcher/State/Store.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "dispatch(_:_:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+>>>>>>> 38ced6b (Initial Commit.  Added background gradient to title screen.)
 </Bucket>

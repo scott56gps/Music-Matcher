@@ -23,6 +23,8 @@ struct TitleScreenView: View {
                 }
             }
         }
+        .containerRelativeFrame([.horizontal, .vertical])
+        .background(Gradient(colors: [.teal, .cyan, .green]).opacity(0.6))
     }
 }
 
