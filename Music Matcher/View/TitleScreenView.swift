@@ -17,13 +17,19 @@ struct TitleScreenView: View {
                 .font(.largeTitle)
                 .padding()
             Spacer()
-            Button("Start!") {
+            Button(action: {
                 withAnimation {
                     // We ask the store to update the game state to startGame
                     // TODO: Create a way to start games of different types
                     store.dispatch(.startGame(.music))
                 }
-            }
+            }, label: {
+                Text("Start!")
+                    .font(.title)
+                    .foregroundStyle(Color.black)
+                    .padding(12)
+                    .background(.blue, in: RoundedRectangle(cornerRadius: 12))
+            })
             Spacer()
         }
         .containerRelativeFrame([.horizontal, .vertical])
