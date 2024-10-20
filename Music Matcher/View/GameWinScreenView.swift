@@ -12,11 +12,23 @@ struct GameWinScreenView: View {
     
     var body: some View {
         VStack {
-            Text("You Won!")
+            VStack {
+                Text("You Won!")
+                Text("Score: \(store.state.moves)")
+            }
+            .padding()
             Button("Go Again") {
                 store.dispatch(.endGame)
             }
         }
+        .frame(
+            minWidth: 0,
+            maxWidth: .infinity,
+            minHeight: 0,
+            maxHeight: .infinity,
+            alignment: .center
+        )
+        .background(Gradient(colors: [Color.pink, Color.purple, Color(red: 0, green: 0, blue: 0.847)]))
     }
 }
 
