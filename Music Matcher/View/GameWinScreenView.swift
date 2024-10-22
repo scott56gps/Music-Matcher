@@ -10,6 +10,15 @@ import SwiftUI
 struct GameWinScreenView: View {
     @EnvironmentObject var store: MusicMatcherStore
     
+    /**
+    Calculates a Color based on a given feeder and the current state.moves
+     */
+    func calculateColor() -> Color {
+        let color = Color(red: Double(Double((store.state.moves + Int.random(in: 0..<255))) / Double(255)), green: Double(Double((store.state.moves + Int.random(in: 0..<255))) / Double(255)), blue: Double(Double((store.state.moves + Int.random(in: 0..<255))) / Double(255)))
+        print(color)
+        return color
+    }
+    
     var body: some View {
         VStack {
             VStack {
@@ -28,7 +37,7 @@ struct GameWinScreenView: View {
             maxHeight: .infinity,
             alignment: .center
         )
-        .background(Gradient(colors: [Color.pink, Color.purple, Color(red: 0, green: 0, blue: 0.847)]))
+        .background(Gradient(colors: [calculateColor(), calculateColor(), calculateColor()]))
     }
 }
 
