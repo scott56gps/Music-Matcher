@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25484E52D23B81600BB3CC4 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25484E42D23B80A00BB3CC4 /* CTAButton.swift */; };
 		D260F14B296D559B00F64EDA /* CardGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F14A296D559B00F64EDA /* CardGridView.swift */; };
 		D260F154296D80CC00F64EDA /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F153296D80CC00F64EDA /* ArrayExtensions.swift */; };
 		D260F156296D89EB00F64EDA /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F155296D89EB00F64EDA /* IntExtensions.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D25484E42D23B80A00BB3CC4 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		D260F14A296D559B00F64EDA /* CardGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGridView.swift; sourceTree = "<group>"; };
 		D260F153296D80CC00F64EDA /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		D260F155296D89EB00F64EDA /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		D2E16D9A2960305900A5A6D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D25484E42D23B80A00BB3CC4 /* CTAButton.swift */,
 				D2E16D6A2960269E00A5A6D0 /* ContentView.swift */,
 				D2E16D9B2960307500A5A6D0 /* TitleScreenView.swift */,
 				D2E16D9D2960309B00A5A6D0 /* GameScreenView.swift */,
@@ -337,7 +340,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					D2E16D642960269E00A5A6D0 = {
 						CreatedOnToolsVersion = 14.2;
@@ -413,6 +416,7 @@
 			files = (
 				D2E16D9929602E2A00A5A6D0 /* Store.swift in Sources */,
 				D264545B29642F9C00C1B85D /* MusicCardGenerator.swift in Sources */,
+				D25484E52D23B81600BB3CC4 /* CTAButton.swift in Sources */,
 				D260F154296D80CC00F64EDA /* ArrayExtensions.swift in Sources */,
 				D2E16D9C2960307500A5A6D0 /* TitleScreenView.swift in Sources */,
 				D2E16D9E2960309B00A5A6D0 /* GameScreenView.swift in Sources */,
@@ -477,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -509,6 +514,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -537,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -569,6 +576,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -604,12 +612,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nicholess.prod.Music-Matcher";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholes.prod.MusicMatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -634,12 +643,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nicholess.prod.Music-Matcher";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholes.prod.MusicMatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
