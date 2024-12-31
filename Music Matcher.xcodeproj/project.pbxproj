@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25484E52D23B81600BB3CC4 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25484E42D23B80A00BB3CC4 /* CTAButton.swift */; };
 		D260F14B296D559B00F64EDA /* CardGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F14A296D559B00F64EDA /* CardGridView.swift */; };
 		D260F154296D80CC00F64EDA /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F153296D80CC00F64EDA /* ArrayExtensions.swift */; };
 		D260F156296D89EB00F64EDA /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260F155296D89EB00F64EDA /* IntExtensions.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D25484E42D23B80A00BB3CC4 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		D260F14A296D559B00F64EDA /* CardGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGridView.swift; sourceTree = "<group>"; };
 		D260F153296D80CC00F64EDA /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		D260F155296D89EB00F64EDA /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		D2E16D9A2960305900A5A6D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D25484E42D23B80A00BB3CC4 /* CTAButton.swift */,
 				D2E16D6A2960269E00A5A6D0 /* ContentView.swift */,
 				D2E16D9B2960307500A5A6D0 /* TitleScreenView.swift */,
 				D2E16D9D2960309B00A5A6D0 /* GameScreenView.swift */,
@@ -413,6 +416,7 @@
 			files = (
 				D2E16D9929602E2A00A5A6D0 /* Store.swift in Sources */,
 				D264545B29642F9C00C1B85D /* MusicCardGenerator.swift in Sources */,
+				D25484E52D23B81600BB3CC4 /* CTAButton.swift in Sources */,
 				D260F154296D80CC00F64EDA /* ArrayExtensions.swift in Sources */,
 				D2E16D9C2960307500A5A6D0 /* TitleScreenView.swift in Sources */,
 				D2E16D9E2960309B00A5A6D0 /* GameScreenView.swift in Sources */,
@@ -614,7 +618,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nicholess.prod.Music-Matcher";
 				PRODUCT_BUNDLE_IDENTIFIER = nicholes.prod.MusicMatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -646,7 +649,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nicholess.prod.Music-Matcher";
 				PRODUCT_BUNDLE_IDENTIFIER = nicholes.prod.MusicMatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
