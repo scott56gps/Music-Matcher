@@ -15,7 +15,6 @@ struct GameWinScreenView: View {
      */
     func calculateColor() -> Color {
         let color = Color(red: Double(Double((store.state.moves + Int.random(in: 0..<255))) / Double(255)), green: Double(Double((store.state.moves + Int.random(in: 0..<255))) / Double(255)), blue: Double(Double((store.state.moves + Int.random(in: 0..<255))) / Double(255)))
-        print(color)
         return color
     }
     
