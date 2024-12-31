@@ -16,7 +16,7 @@ struct TitleScreenView: View {
             VStack {
                 Spacer()
                 Text("Music Matcher")
-                    .font(.largeTitle)
+                    .font(.system(size: 50))
                     .padding()
                 Spacer()
             }
