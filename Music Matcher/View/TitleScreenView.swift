@@ -13,24 +13,30 @@ struct TitleScreenView: View {
     
     var body: some View {
         VStack {
-            Text("Music Matcher")
-                .font(.largeTitle)
-                .padding()
-            Spacer()
-            Button(action: {
-                withAnimation {
-                    // We ask the store to update the game state to startGame
-                    // TODO: Create a way to start games of different types
-                    store.dispatch(.startGame(.music))
-                }
-            }, label: {
-                Text("Start!")
-                    .font(.title)
-                    .foregroundStyle(Color.black)
-                    .padding(12)
-                    .background(.blue, in: RoundedRectangle(cornerRadius: 12))
-            })
-            Spacer()
+            VStack {
+                Spacer()
+                Text("Music Matcher")
+                    .font(.largeTitle)
+                    .padding()
+                Spacer()
+            }
+            VStack {
+                Button(action: {
+                    withAnimation {
+                        // We ask the store to update the game state to startGame
+                        // TODO: Create a way to start games of different types
+                        store.dispatch(.startGame(.music))
+                    }
+                }, label: {
+                    Text("Start!")
+                        .font(.title)
+                        .foregroundStyle(Color.black)
+                        .padding(12)
+                        .background(.blue, in: RoundedRectangle(cornerRadius: 12))
+                })
+                Spacer()
+
+            }
         }
         .containerRelativeFrame([.horizontal, .vertical])
         .background(Gradient(colors: [.teal, .cyan, .green]).opacity(0.6))
