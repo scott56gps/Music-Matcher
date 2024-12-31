@@ -15,6 +15,7 @@ struct GameScreenView: View {
             CardGridView(cards: store.state.cards)
             Text("Moves: \(store.state.moves)")
         }
+        .background(Gradient(colors: [.teal, .cyan, .green]).opacity(0.6))
     }
 }
 
