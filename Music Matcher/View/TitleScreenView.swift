@@ -21,14 +21,13 @@ struct TitleScreenView: View {
                 Spacer()
             }
             VStack {
-                CTAButton(
-                    action: {
-                        withAnimation {
-                            // We ask the store to update the game state to startGame
-                            // TODO: Create a way to start games of different types
-                            store.dispatch(.startGame(.music))
-                        }
-                    }, label: Text("Start!"))
+                CTAButton("Start!") {
+                    withAnimation {
+                        // We ask the store to update the game state to startGame
+                        // TODO: Create a way to start games of different types
+                        store.dispatch(.startGame(.music))
+                    }
+                }
                 Spacer()
 
             }

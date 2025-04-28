@@ -22,10 +22,11 @@ struct GameWinScreenView: View {
         VStack {
             VStack {
                 Text("You Won!")
+                    .font(.system(size: 50))
                 Text("Score: \(store.state.moves)")
             }
             .padding()
-            Button("Go Again") {
+            CTAButton("Go Again", .blue) {
                 store.dispatch(.endGame)
             }
         }
